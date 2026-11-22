@@ -27,6 +27,11 @@ public class Luchador {
 
     // RANDOM - Dados
     private final Random random = new Random();
+    
+    
+    // COMPOSICIÓN - Armadura
+    private Armadura armadura;
+
 
     // EFECTOS - Estados
     private int quemaduraDanio = 0;
@@ -35,8 +40,7 @@ public class Luchador {
     private int venenoRondas = 0;
 
     // CONSTRUCTOR - Inicialización
-    public Luchador(String nombre, int HP, int ataque, int fuerza,
-                    int agilidad, int inteligencia) {
+    public Luchador(String nombre, int HP, int ataque, int fuerza, int agilidad, int inteligencia) {
 
         this.nombre = nombre;
         this.HP = validarHP(HP);
@@ -138,18 +142,30 @@ public class Luchador {
     }
 
     // DEFENSA - D20
+
+    // DEFENSA - D20
     public int defenderse() {
-
+        // RANDOM - Dado
         int dado = tirarDado(20);
-        int defensa = dado + agilidad / 10;
+        int bonoArmadura = 0;
 
-        // PRINT - Defensa
-        System.out.println(nombre + " se defiende.");
-        System.out.println("Resultado del dado: " + dado);
-        System.out.println("Puntos de defensa: " + defensa);
+        // IF - Armadura
+        if (armadura != null) {
+            bonoArmadura = armadura.getBonoDefensa();
+        }
+
+        // CÁLCULO - Defensa
+        int defensa = dado + getAgilidad() / 10 + bonoArmadura;
+
+        // PRINT - Resultados
+        System.out.println(getNombre() + " se defiende.");
+        System.out.println("Dado D20: " + dado);
+        System.out.println("Bono de armadura: " + bonoArmadura);
+        System.out.println("Defensa total: " + defensa);
 
         return defensa;
     }
+
 
     // DAÑO - Vida
     public void recibirDanio(int danio) {
@@ -242,6 +258,45 @@ public class Luchador {
 
         return danio;
     }
+    
+    
+    // MÉTODO - Equipamiento
+    public void equiparArmadura(Armadura nuevaArmadura) {
+
+        // IF - Validación
+        if (nuevaArmadura == null) {
+            System.out.println("Armadura no válida.");
+            return;
+        }
+
+        // IF - Equipo
+        if (this.armadura != null) {
+            System.out.println("Ya tiene armadura.");
+            return;
+        }
+
+        // ASIGNACIÓN - Armadura
+        this.armadura = nuevaArmadura;
+
+        // IF - Inteligencia
+        if (nuevaArmadura.getBonoInteligencia() > 0) {
+            int inteligenciaNueva = getinteligencia()
+                    + nuevaArmadura.getBonoInteligencia();
+
+            setinteligencia(Math.min(100, inteligenciaNueva));
+        }
+
+        // PRINT - Equipo
+        System.out.println(getNombre() + " equipa "
+                + nuevaArmadura.getNombre());
+    }
+
+    // GET - Armadura
+    public Armadura getArmadura() {
+        return armadura;
+    }
+
+    
 }
 
 
