@@ -1,0 +1,135 @@
+[{
+  "_id": "PROD-001",
+  "nombre": "Asociación Agroecológica Los Arrieros",
+  "representante": "Carlos Mario Orozco",
+  "activo": true,
+  "ubicacion": {
+    "municipio": "Silvia",
+    "vereda": "Las Delicias",
+    "altitud_msnm": 2500
+  },
+  "contacto": {
+    "telefono": "3115550101",
+    "email": "contacto@losarrieros.org"
+  },
+  "certificaciones": [
+    {
+      "nombre": "Orgánico",
+      "entidad": "Biotropico",
+      "vigente_hasta": {
+        "$date": "2027-12-31T23:59:59.000Z"
+      }
+    },
+    {
+      "nombre": "Comercio Justo",
+      "entidad": "Fairtrade",
+      "vigente_hasta": {
+        "$date": "2028-06-30T23:59:59.000Z"
+      }
+    }
+  ]
+},
+{
+  "_id": "PROD-002",
+  "nombre": "Finca El Paraíso",
+  "representante": "María Elena Burbano",
+  "activo": true,
+  "ubicacion": {
+    "municipio": "Popayán",
+    "vereda": "La Rejoya",
+    "altitud_msnm": 1750
+  },
+  "contacto": {
+    "telefono": "3125550202",
+    "email": "maria.burbano@elparaiso.com"
+  },
+  "certificaciones": [
+    {
+      "nombre": "Orgánico",
+      "entidad": "Certec",
+      "vigente_hasta": {
+        "$date": "2027-08-15T23:59:59.000Z"
+      }
+    }
+  ]
+},
+{
+  "_id": "PROD-003",
+  "nombre": "Cooperativa Cafetera del Sur",
+  "representante": "Jorge Isaacs Palechor",
+  "activo": true,
+  "ubicacion": {
+    "municipio": "Pitalito",
+    "vereda": "Guacacallo",
+    "altitud_msnm": 1300
+  },
+  "contacto": {
+    "telefono": "3135550303",
+    "email": "coopcafedelsur@gmail.com"
+  },
+  "certificaciones": [
+    {
+      "nombre": "Rainforest Alliance",
+      "entidad": "SAN",
+      "vigente_hasta": {
+        "$date": "2026-12-31T23:59:59.000Z"
+      }
+    }
+  ]
+},
+{
+  "_id": "PROD-004",
+  "nombre": "Asociación Campesina de Inzá",
+  "representante": "Lucía Morales",
+  "activo": false,
+  "ubicacion": {
+    "municipio": "Inzá",
+    "vereda": "San Andrés de Pisimbalá",
+    "altitud_msnm": 1800
+  },
+  "contacto": {
+    "telefono": "3145550404",
+    "email": "asoinza@hotmail.com"
+  },
+  "certificaciones": [
+    {
+      "nombre": "GlobalGAP",
+      "entidad": "Icontec",
+      "vigente_hasta": {
+        "$date": "2025-10-10T23:59:59.000Z"
+      }
+    }
+  ]
+},
+{
+  "_id": "PROD-005",
+  "nombre": "Hacienda San José",
+  "representante": "Pedro Antonio Gómez",
+  "activo": true,
+  "ubicacion": {
+    "municipio": "Timbío",
+    "vereda": "Uribe",
+    "altitud_msnm": 1850
+  },
+  "contacto": {
+    "telefono": "3155550505",
+    "email": "pedrogomez@sanjose.co"
+  },
+  "certificaciones": []
+},
+{
+  "_id": "PROD-006",
+  "nombre": "Parcela La Esperanza",
+  "representante": "Martha Cecilia Hoyos",
+  "activo": true,
+  "ubicacion": {
+    "municipio": "Popayán",
+    "vereda": "Puelenje",
+    "altitud_msnm": 1730
+  },
+  "contacto": {
+    "telefono": "3165550606",
+    "email": "martha.esperanza@gmail.com"
+  },
+  "certificaciones": []
+}]

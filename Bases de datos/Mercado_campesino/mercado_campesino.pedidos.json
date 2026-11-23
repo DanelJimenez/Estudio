@@ -1,0 +1,532 @@
+[{
+  "_id": "PED-010",
+  "cliente_id": {
+    "$oid": "654f00000000000000000007"
+  },
+  "fecha": {
+    "$date": "2026-10-25T14:40:00.000Z"
+  },
+  "estado": "Enviado",
+  "metodo_pago": "PSE",
+  "items": [
+    {
+      "producto_id": "PROD-004",
+      "nombre": "Panela molida 500 g",
+      "cantidad": 12,
+      "precio_unitario": 8000,
+      "subtotal": 96000
+    },
+    {
+      "producto_id": "PROD-003",
+      "nombre": "Café en grano 1 kg",
+      "cantidad": 2,
+      "precio_unitario": 52000,
+      "subtotal": 104000
+    }
+  ],
+  "total": 200000
+},
+{
+  "_id": "PED-011",
+  "cliente_id": {
+    "$oid": "654f00000000000000000002"
+  },
+  "fecha": {
+    "$date": "2026-10-30T17:25:00.000Z"
+  },
+  "estado": "Cancelado",
+  "metodo_pago": "Daviplata",
+  "items": [
+    {
+      "producto_id": "PROD-013",
+      "nombre": "Pera",
+      "cantidad": 3,
+      "precio_unitario": 8900,
+      "subtotal": 26700
+    },
+    {
+      "producto_id": "PROD-004",
+      "nombre": "Panela molida 500 g",
+      "cantidad": 2,
+      "precio_unitario": 8000,
+      "subtotal": 16000
+    }
+  ],
+  "total": 42700
+},
+{
+  "_id": "PED-004",
+  "cliente_id": {
+    "$oid": "654f00000000000000000007"
+  },
+  "fecha": {
+    "$date": "2026-09-22T11:45:00.000Z"
+  },
+  "estado": "Cancelado",
+  "metodo_pago": "Efectivo",
+  "items": [
+    {
+      "producto_id": "PROD-011",
+      "nombre": "Mochila tejida",
+      "cantidad": 1,
+      "precio_unitario": 45000,
+      "subtotal": 45000
+    }
+  ],
+  "total": 45000
+},
+{
+  "_id": "PED-015",
+  "cliente_id": {
+    "$oid": "654f00000000000000000004"
+  },
+  "fecha": {
+    "$date": "2026-11-16T10:20:00.000Z"
+  },
+  "estado": "Pagado",
+  "metodo_pago": "Daviplata",
+  "items": [
+    {
+      "producto_id": "PROD-013",
+      "nombre": "Pera",
+      "cantidad": 10,
+      "precio_unitario": 8900,
+      "subtotal": 89000
+    },
+    {
+      "producto_id": "PROD-003",
+      "nombre": "Café en grano 1 kg",
+      "cantidad": 1,
+      "precio_unitario": 52000,
+      "subtotal": 52000
+    },
+    {
+      "producto_id": "PROD-004",
+      "nombre": "Panela molida 500 g",
+      "cantidad": 5,
+      "precio_unitario": 8000,
+      "subtotal": 40000
+    },
+    {
+      "producto_id": "PROD-007",
+      "nombre": "Tomate chonto",
+      "cantidad": 12,
+      "precio_unitario": 4500,
+      "subtotal": 54000
+    }
+  ],
+  "total": 235000,
+  "envio": {
+    "ciudad": "Cali",
+    "costo": 11000
+  }
+},
+{
+  "_id": "PED-003",
+  "cliente_id": {
+    "$oid": "654f00000000000000000002"
+  },
+  "fecha": {
+    "$date": "2026-09-15T09:20:00.000Z"
+  },
+  "estado": "Entregado",
+  "metodo_pago": "Daviplata",
+  "items": [
+    {
+      "producto_id": "PROD-013",
+      "nombre": "Pera",
+      "cantidad": 2,
+      "precio_unitario": 8900,
+      "subtotal": 17800
+    }
+  ],
+  "total": 17800
+},
+{
+  "_id": "PED-002",
+  "cliente_id": {
+    "$oid": "654f00000000000000000004"
+  },
+  "fecha": {
+    "$date": "2026-09-08T15:30:00.000Z"
+  },
+  "estado": "Entregado",
+  "metodo_pago": "PSE",
+  "items": [
+    {
+      "producto_id": "PROD-003",
+      "nombre": "Café en grano 1 kg",
+      "cantidad": 2,
+      "precio_unitario": 52000,
+      "subtotal": 104000
+    },
+    {
+      "producto_id": "PROD-007",
+      "nombre": "Tomate chonto",
+      "cantidad": 20,
+      "precio_unitario": 4500,
+      "subtotal": 90000
+    }
+  ],
+  "total": 194000
+},
+{
+  "_id": "PED-005",
+  "cliente_id": {
+    "$oid": "654f00000000000000000005"
+  },
+  "fecha": {
+    "$date": "2026-09-28T13:10:00.000Z"
+  },
+  "estado": "Entregado",
+  "metodo_pago": "Nequi",
+  "items": [
+    {
+      "producto_id": "PROD-003",
+      "nombre": "Café en grano 1 kg",
+      "cantidad": 1,
+      "precio_unitario": 52000,
+      "subtotal": 52000
+    },
+    {
+      "producto_id": "PROD-004",
+      "nombre": "Panela molida 500 g",
+      "cantidad": 10,
+      "precio_unitario": 8000,
+      "subtotal": 80000
+    },
+    {
+      "producto_id": "PROD-013",
+      "nombre": "Pera",
+      "cantidad": 4,
+      "precio_unitario": 8900,
+      "subtotal": 35600
+    }
+  ],
+  "total": 167600
+},
+{
+  "_id": "PED-008",
+  "cliente_id": {
+    "$oid": "654f00000000000000000004"
+  },
+  "fecha": {
+    "$date": "2026-10-14T08:15:00.000Z"
+  },
+  "estado": "Enviado",
+  "metodo_pago": "Daviplata",
+  "items": [
+    {
+      "producto_id": "PROD-007",
+      "nombre": "Tomate chonto",
+      "cantidad": 30,
+      "precio_unitario": 4500,
+      "subtotal": 135000
+    },
+    {
+      "producto_id": "PROD-013",
+      "nombre": "Pera",
+      "cantidad": 5,
+      "precio_unitario": 8900,
+      "subtotal": 44500
+    }
+  ],
+  "total": 179500
+},
+{
+  "_id": "PED-014",
+  "cliente_id": {
+    "$oid": "654f00000000000000000008"
+  },
+  "fecha": {
+    "$date": "2026-11-13T15:15:00.000Z"
+  },
+  "estado": "Pendiente",
+  "metodo_pago": "PSE",
+  "items": [
+    {
+      "producto_id": "PROD-003",
+      "nombre": "Café en grano 1 kg",
+      "cantidad": 2,
+      "precio_unitario": 52000,
+      "subtotal": 104000
+    },
+    {
+      "producto_id": "PROD-007",
+      "nombre": "Tomate chonto",
+      "cantidad": 8,
+      "precio_unitario": 4500,
+      "subtotal": 36000
+    },
+    {
+      "producto_id": "PROD-004",
+      "nombre": "Panela molida 500 g",
+      "cantidad": 6,
+      "precio_unitario": 8000,
+      "subtotal": 48000
+    }
+  ],
+  "total": 188000,
+  "envio": {
+    "ciudad": "Popayán",
+    "costo": 15000
+  }
+},
+{
+  "_id": "PED-001",
+  "cliente_id": {
+    "$oid": "654f00000000000000000001"
+  },
+  "fecha": {
+    "$date": "2026-09-03T10:00:00.000Z"
+  },
+  "estado": "Entregado",
+  "metodo_pago": "Nequi",
+  "items": [
+    {
+      "producto_id": "PROD-004",
+      "nombre": "Panela molida 500 g",
+      "cantidad": 3,
+      "precio_unitario": 8000,
+      "subtotal": 24000
+    },
+    {
+      "producto_id": "PROD-007",
+      "nombre": "Tomate chonto",
+      "cantidad": 5,
+      "precio_unitario": 4500,
+      "subtotal": 22500
+    }
+  ],
+  "total": 46500
+},
+{
+  "_id": "PED-013",
+  "cliente_id": {
+    "$oid": "654f00000000000000000003"
+  },
+  "fecha": {
+    "$date": "2026-11-09T11:05:00.000Z"
+  },
+  "estado": "Pendiente",
+  "metodo_pago": "Nequi",
+  "items": [
+    {
+      "producto_id": "PROD-004",
+      "nombre": "Panela molida 500 g",
+      "cantidad": 4,
+      "precio_unitario": 8000,
+      "subtotal": 32000
+    }
+  ],
+  "total": 32000,
+  "envio": {
+    "ciudad": "Cali",
+    "costo": 8000
+  }
+},
+{
+  "_id": "PED-006",
+  "cliente_id": {
+    "$oid": "654f00000000000000000003"
+  },
+  "fecha": {
+    "$date": "2026-10-02T16:00:00.000Z"
+  },
+  "estado": "Entregado",
+  "metodo_pago": "Efectivo",
+  "items": [
+    {
+      "producto_id": "PROD-007",
+      "nombre": "Tomate chonto",
+      "cantidad": 4,
+      "precio_unitario": 4500,
+      "subtotal": 18000
+    }
+  ],
+  "total": 18000
+},
+{
+  "_id": "PED-007",
+  "cliente_id": {
+    "$oid": "654f00000000000000000008"
+  },
+  "fecha": {
+    "$date": "2026-10-09T10:30:00.000Z"
+  },
+  "estado": "Entregado",
+  "metodo_pago": "PSE",
+  "items": [
+    {
+      "producto_id": "PROD-003",
+      "nombre": "Café en grano 1 kg",
+      "cantidad": 3,
+      "precio_unitario": 52000,
+      "subtotal": 156000
+    },
+    {
+      "producto_id": "PROD-004",
+      "nombre": "Panela molida 500 g",
+      "cantidad": 5,
+      "precio_unitario": 8000,
+      "subtotal": 40000
+    },
+    {
+      "producto_id": "PROD-013",
+      "nombre": "Pera",
+      "cantidad": 3,
+      "precio_unitario": 8900,
+      "subtotal": 26700
+    },
+    {
+      "producto_id": "PROD-007",
+      "nombre": "Tomate chonto",
+      "cantidad": 10,
+      "precio_unitario": 4500,
+      "subtotal": 45000
+    }
+  ],
+  "total": 267700
+},
+{
+  "_id": "PED-012",
+  "cliente_id": {
+    "$oid": "654f00000000000000000005"
+  },
+  "fecha": {
+    "$date": "2026-11-04T09:50:00.000Z"
+  },
+  "estado": "Pagado",
+  "metodo_pago": "Efectivo",
+  "items": [
+    {
+      "producto_id": "PROD-007",
+      "nombre": "Tomate chonto",
+      "cantidad": 15,
+      "precio_unitario": 4500,
+      "subtotal": 67500
+    },
+    {
+      "producto_id": "PROD-013",
+      "nombre": "Pera",
+      "cantidad": 6,
+      "precio_unitario": 8900,
+      "subtotal": 53400
+    }
+  ],
+  "total": 120900,
+  "envio": {
+    "ciudad": "Popayán",
+    "costo": 12000
+  }
+},
+{
+  "_id": "PED-009",
+  "cliente_id": {
+    "$oid": "654f00000000000000000001"
+  },
+  "fecha": {
+    "$date": "2026-10-19T12:00:00.000Z"
+  },
+  "estado": "Pagado",
+  "metodo_pago": "Nequi",
+  "items": [
+    {
+      "producto_id": "PROD-003",
+      "nombre": "Café en grano 1 kg",
+      "cantidad": 1,
+      "precio_unitario": 52000,
+      "subtotal": 52000
+    }
+  ],
+  "total": 52000
+},
+{
+  "_id": "PED-016",
+  "cliente_id": {
+    "$oid": "654f00000000000000000001"
+  },
+  "fecha": {
+    "$date": "2026-11-10T10:00:00.000Z"
+  },
+  "estado": "Pagado",
+  "metodo_pago": "Nequi",
+  "items": [
+    {
+      "producto_id": "PROD-001",
+      "nombre": "Café molido 500 g",
+      "cantidad": 2,
+      "precio_unitario": 6500,
+      "subtotal": 13000
+    },
+    {
+      "producto_id": "PROD-004",
+      "nombre": "Panela molida 500 g",
+      "cantidad": 8,
+      "precio_unitario": 8000,
+      "subtotal": 64000
+    }
+  ],
+  "total": 77000
+},
+{
+  "_id": "PED-017",
+  "cliente_id": {
+    "$oid": "654f00000000000000000004"
+  },
+  "fecha": {
+    "$date": "2026-11-12T11:00:00.000Z"
+  },
+  "estado": "Enviado",
+  "metodo_pago": "PSE",
+  "items": [
+    {
+      "producto_id": "PROD-001",
+      "nombre": "Café molido 500 g",
+      "cantidad": 8,
+      "precio_unitario": 6500,
+      "subtotal": 52000
+    }
+  ],
+  "total": 52000
+},
+{
+  "_id": "PED-018",
+  "cliente_id": {
+    "$oid": "654f00000000000000000007"
+  },
+  "fecha": {
+    "$date": "2026-11-14T10:00:00.000Z"
+  },
+  "estado": "Pagado",
+  "metodo_pago": "Nequi",
+  "items": [
+    {
+      "producto_id": "PROD-004",
+      "nombre": "Panela molida 500 g",
+      "cantidad": 2,
+      "precio_unitario": 8000,
+      "subtotal": 16000
+    }
+  ],
+  "total": 20000
+},
+{
+  "_id": "PED-019",
+  "cliente_id": "CLI-999",
+  "fecha": {
+    "$date": "2026-11-15T10:00:00.000Z"
+  },
+  "estado": "Pendiente",
+  "metodo_pago": "Efectivo",
+  "items": [
+    {
+      "producto_id": "PROD-007",
+      "nombre": "Tomate chonto",
+      "cantidad": 2,
+      "precio_unitario": 4500,
+      "subtotal": 9000
+    }
+  ],
+  "total": 9000
+}]

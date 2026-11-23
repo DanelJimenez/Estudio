@@ -1,0 +1,234 @@
+[{
+  "_id": "PROD-001",
+  "nombre": "Café molido 500 g",
+  "categoria": "Café",
+  "productor_id": "PRO-001",
+  "precio": {
+    "valor": 28000,
+    "unidad": "bolsa"
+  },
+  "stock": 40,
+  "atributos": {
+    "organico": true,
+    "origen": "Cauca"
+  },
+  "bodega": "Bodega Popayán"
+},
+{
+  "_id": "PROD-002",
+  "nombre": "Papas",
+  "categoria": "Hortalizas",
+  "productor_id": "PRO-004",
+  "precio": {
+    "valor": 3500,
+    "unidad": "lb"
+  },
+  "stock": 15,
+  "atributos": {
+    "organico": true,
+    "origen": "Cauca"
+  },
+  "bodega": "Bodega Cali"
+},
+{
+  "_id": "PROD-003",
+  "nombre": "Café en grano 1 kg",
+  "categoria": "Café",
+  "productor_id": "PRO-001",
+  "precio": {
+    "valor": 52000,
+    "unidad": "bolsa"
+  },
+  "stock": 25,
+  "atributos": {
+    "organico": true,
+    "origen": "Cauca"
+  },
+  "etiquetas": [
+    "orgánico",
+    "especial"
+  ],
+  "bodega": "Bodega Popayán"
+},
+{
+  "_id": "PROD-004",
+  "nombre": "Panela molida 500 g",
+  "categoria": "Panela",
+  "productor_id": "PRO-002",
+  "precio": {
+    "valor": 8000,
+    "unidad": "bolsa"
+  },
+  "stock": 30,
+  "atributos": {
+    "organico": true,
+    "origen": "Cauca"
+  },
+  "etiquetas": [
+    "orgánico",
+    "especial"
+  ],
+  "bodega": "Bodega Popayán"
+},
+{
+  "_id": "PROD-005",
+  "nombre": "Panela en bloque",
+  "categoria": "Panela",
+  "productor_id": "PRO-002",
+  "precio": {
+    "valor": 6500,
+    "unidad": "unidad"
+  },
+  "stock": 0,
+  "atributos": {
+    "organico": true,
+    "origen": "Cauca"
+  },
+  "bodega": "Bodega Popayán"
+},
+{
+  "_id": "PROD-006",
+  "nombre": "Lulo",
+  "categoria": "Frutas",
+  "productor_id": "PRO-003",
+  "precio": {
+    "valor": 11000,
+    "unidad": "kg"
+  },
+  "stock": 0,
+  "atributos": {
+    "organico": true,
+    "origen": "Cauca"
+  },
+  "bodega": "Bodega Cali"
+},
+{
+  "_id": "PROD-007",
+  "nombre": "Tomate chonto",
+  "categoria": "Hortalizas",
+  "productor_id": "PRO-004",
+  "precio": {
+    "valor": 4500,
+    "unidad": "kg"
+  },
+  "stock": 200,
+  "atributos": {
+    "organico": true,
+    "origen": "Cauca"
+  },
+  "etiquetas": [
+    "orgánico"
+  ],
+  "bodega": "Bodega Cali"
+},
+{
+  "_id": "PROD-008",
+  "nombre": "Cebolla larga",
+  "categoria": "Hortalizas",
+  "productor_id": "PRO-004",
+  "precio": {
+    "valor": 3000,
+    "unidad": "kg"
+  },
+  "stock": 150,
+  "atributos": {
+    "organico": true,
+    "origen": "Cauca"
+  },
+  "bodega": "Bodega Cali"
+},
+{
+  "_id": "PROD-009",
+  "nombre": "Queso campesino",
+  "categoria": "Lácteos",
+  "productor_id": "PRO-005",
+  "precio": {
+    "valor": 18000,
+    "unidad": "kg"
+  },
+  "stock": 30,
+  "bodega": "Bodega Silvia"
+},
+{
+  "_id": "PROD-010",
+  "nombre": "Canasto tejido",
+  "categoria": "Artesanías",
+  "productor_id": "PRO-006",
+  "precio": {
+    "valor": 60000,
+    "unidad": "unidad"
+  },
+  "stock": 8,
+  "bodega": "Bodega Silvia"
+},
+{
+  "_id": "PROD-011",
+  "nombre": "Mochila tejida",
+  "categoria": "Artesanías",
+  "productor_id": "PRO-006",
+  "precio": {
+    "valor": 45000,
+    "unidad": "unidad"
+  },
+  "stock": 0,
+  "bodega": "Bodega Silvia"
+},
+{
+  "_id": "PROD-012",
+  "nombre": "Mora",
+  "categoria": "Frutas",
+  "productor_id": "PRO-003",
+  "precio": {
+    "valor": 3450,
+    "unidad": "bolsa"
+  },
+  "stock": 15,
+  "atributos": {
+    "organico": true,
+    "origen": "Cauca"
+  },
+  "bodega": "Bodega Cali"
+},
+{
+  "_id": "PROD-013",
+  "nombre": "Pera",
+  "categoria": "Frutas",
+  "productor_id": "PRO-003",
+  "precio": {
+    "valor": 8900,
+    "unidad": "kg"
+  },
+  "stock": 15,
+  "atributos": {
+    "organico": true,
+    "origen": "Cauca"
+  },
+  "etiquetas": [
+    "orgánico"
+  ],
+  "bodega": "Bodega Cali"
+},
+{
+  "_id": "PROD-014",
+  "nombre": "Crema de leche",
+  "categoria": "Lácteos",
+  "productor_id": "PRO-005",
+  "precio": {
+    "valor": 12000,
+    "unidad": "litro"
+  },
+  "stock": 15,
+  "bodega": "Bodega Silvia"
+},
+{
+  "_id": "PROD-015",
+  "nombre": "Leche entera",
+  "categoria": "Lácteos",
+  "productor_id": "PRO-005",
+  "precio": {
+    "valor": 6900,
+    "unidad": "litro"
+  },
+  "stock": 15,
+  "bodega": "Bodega Silvia"
+}]

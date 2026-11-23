@@ -1,0 +1,171 @@
+[{
+  "_id": {
+    "$oid": "654f00000000000000000003"
+  },
+  "nombre": "Laura Valentina Gómez",
+  "tipo": "Persona",
+  "correo": "laura.gomez@correo.com",
+  "telefono": "3209981122",
+  "direccion": {
+    "ciudad": "Cali",
+    "barrio": "Ciudad Jardín",
+    "calle": "Calle 18 # 100-15"
+  },
+  "activo": true,
+  "fecha_registro": {
+    "$date": "2026-09-02T11:15:00.000Z"
+  },
+  "preferencias": [
+    "Frutas"
+  ]
+},
+{
+  "_id": {
+    "$oid": "654f00000000000000000008"
+  },
+  "nombre": "Tienda Naturista Cauca",
+  "tipo": "Tienda",
+  "correo": "ventas@naturistacauca.co",
+  "telefono": "3126674433",
+  "direccion": {
+    "ciudad": "Popayán",
+    "barrio": "Bolívar",
+    "calle": "Carrera 9 # 2-18"
+  },
+  "activo": true,
+  "fecha_registro": {
+    "$date": "2026-10-01T13:00:00.000Z"
+  },
+  "preferencias": [
+    "Frutas"
+  ]
+},
+{
+  "_id": {
+    "$oid": "654f00000000000000000002"
+  },
+  "nombre": "Carlos Andrés Muñoz",
+  "tipo": "Persona",
+  "correo": "carlos.munoz@correo.com",
+  "telefono": "3157788991",
+  "direccion": {
+    "ciudad": "Popayán",
+    "barrio": "Centro",
+    "calle": "Calle 5 # 7-40"
+  },
+  "activo": true,
+  "fecha_registro": {
+    "$date": "2026-08-20T14:30:00.000Z"
+  },
+  "preferencias": [
+    "Frutas"
+  ]
+},
+{
+  "_id": {
+    "$oid": "654f00000000000000000005"
+  },
+  "nombre": "Restaurante La Posada Blanca",
+  "tipo": "Restaurante",
+  "correo": "compras@posadablanca.com",
+  "telefono": "6028241020",
+  "direccion": {
+    "ciudad": "Popayán",
+    "barrio": "Centro Histórico",
+    "calle": "Carrera 6 # 3-25"
+  },
+  "activo": true,
+  "fecha_registro": {
+    "$date": "2026-08-25T10:45:00.000Z"
+  },
+  "preferencias": [
+    "Café",
+    "Hortalizas"
+  ]
+},
+{
+  "_id": {
+    "$oid": "654f00000000000000000004"
+  },
+  "nombre": "Restaurante Sabor Caleño",
+  "tipo": "Restaurante",
+  "correo": "pedidos@saborcaleno.com",
+  "telefono": "6025551234",
+  "direccion": {
+    "ciudad": "Cali",
+    "barrio": "Granada",
+    "calle": "Avenida 9N # 15-30"
+  },
+  "activo": true,
+  "fecha_registro": {
+    "$date": "2026-08-10T08:00:00.000Z"
+  },
+  "preferencias": [
+    "Café",
+    "Hortalizas"
+  ]
+},
+{
+  "_id": {
+    "$oid": "654f00000000000000000001"
+  },
+  "nombre": "María Fernanda Ortiz",
+  "tipo": "Persona",
+  "correo": "mf.ortiz@correo.com",
+  "telefono": "3104567890",
+  "direccion": {
+    "ciudad": "Cali",
+    "barrio": "San Fernando",
+    "calle": "Carrera 34 # 5-21"
+  },
+  "activo": true,
+  "fecha_registro": {
+    "$date": "2026-08-15T09:00:00.000Z"
+  },
+  "preferencias": [
+    "Frutas"
+  ]
+},
+{
+  "_id": {
+    "$oid": "654f00000000000000000006"
+  },
+  "nombre": "Restaurante Fogón Payanés",
+  "tipo": "Restaurante",
+  "correo": "contacto@fogonpayanes.com",
+  "telefono": "6028337766",
+  "direccion": {
+    "ciudad": "Popayán",
+    "barrio": "La Esmeralda",
+    "calle": "Calle 4 # 10-12"
+  },
+  "activo": false,
+  "fecha_registro": {
+    "$date": "2026-09-05T16:20:00.000Z"
+  },
+  "preferencias": [
+    "Café",
+    "Hortalizas"
+  ]
+},
+{
+  "_id": {
+    "$oid": "654f00000000000000000007"
+  },
+  "nombre": "Tienda El Campo Fresco",
+  "tipo": "Tienda",
+  "correo": "info@campofresco.co",
+  "telefono": "3118896655",
+  "direccion": {
+    "ciudad": "Cali",
+    "barrio": "Alameda",
+    "calle": "Carrera 8 # 28-44"
+  },
+  "activo": true,
+  "fecha_registro": {
+    "$date": "2026-09-12T09:30:00.000Z"
+  },
+  "preferencias": [
+    "Frutas"
+  ]
+}]
