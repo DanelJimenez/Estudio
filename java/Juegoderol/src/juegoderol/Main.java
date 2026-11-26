@@ -18,9 +18,9 @@ public class Main {
       // PRINT - Inicio
       try (Scanner entrada = new Scanner(System.in)) {
           // PRINT - Inicio
-          System.out.println("================================");
-          System.out.println("       ARENA DE LUCHADORES");
-          System.out.println("================================");
+ 
+          System.out.println("  ARENA DE LUCHADORES");
+ 
           // OBJETOS - Personajes
           Guerrero guerrero = new Guerrero("Capitán América", 100, 60, 1, 1, 1);
           Mago mago = new Mago("Piru", 100, 55, 1, 1, 1);
@@ -51,7 +51,7 @@ public class Main {
                           + luchador.getArmadura().getBonoDefensa());
               }
           }     // SELECCIÓN - Personajes
-          System.out.println("\n--- SELECCIÓN ---");
+          System.out.println("SELECCIÓN");
           int opcion1 = leerOpcion(entrada, "Primer luchador (1-3): ", 1, 3);
           int opcion2;
           // DO-WHILE - Validación
@@ -65,9 +65,9 @@ public class Main {
           Luchador jugador1 = luchadores[opcion1 - 1];
           Luchador jugador2 = luchadores[opcion2 - 1];
           // PRINT - Combate
-          System.out.println("\n================================");
-          System.out.println("         INICIA EL COMBATE");
-          System.out.println("================================");
+          
+          System.out.println(" INICIA EL COMBATE");
+         
           System.out.println(jugador1.getNombre() + " VS " + jugador2.getNombre());
           int turno = 0;
           // WHILE - Combate
@@ -85,9 +85,9 @@ public class Main {
               }
               
               // PRINT - Turno
-              System.out.println("\n--------------------------------");
+
               System.out.println("TURNO DE " + atacante.getNombre());
-              System.out.println("--------------------------------");
+         
               
               // INSTANCEOF - Enfriamiento
               switch (atacante) {
@@ -182,9 +182,9 @@ public class Main {
               // INCREMENTO - Turnos
               turno++;
           }     // PRINT - Final
-          System.out.println("\n================================");
+    
           System.out.println("          FIN DEL COMBATE");
-          System.out.println("================================");
+    
           // IF-ELSE - Ganador
           if (jugador1.estaVivo()) {
               System.out.println("GANADOR: " + jugador1.getNombre());
