@@ -155,7 +155,6 @@ public class Luchador {
         // PRINT - Resultados
         System.out.println(getNombre() + " se defiende.");
         System.out.println("Dado D20: " + dado);
-        System.out.println("Bono de armadura: " + bonoArmadura);
         System.out.println("Defensa total: " + defensa);
 
         return defensa;
