@@ -24,13 +24,11 @@ public class Luchador {
     private int fuerza;
     private int agilidad;
     private int inteligencia;
+    private Armadura armadura;
 
     // RANDOM - Dados
     private final Random random = new Random();
     
-    
-  
-
 
     // EFECTOS - Estados
     private int quemaduraDanio = 0;
@@ -79,6 +77,7 @@ public class Luchador {
     public int getFuerza() { return fuerza; }
     public int getAgilidad() { return agilidad; }
     public int getinteligencia() { return inteligencia; }
+    public Armadura getArmadura() { return armadura; }
 
     // SET - Modificar
     public void setNombre(String nombre) { this.nombre = nombre; }
@@ -87,6 +86,7 @@ public class Luchador {
     public void setFuerza(int fuerza) { this.fuerza = validar(fuerza); }
     public void setAgilidad(int agilidad) { this.agilidad = validar(agilidad); }
     public void setinteligencia(int inteligencia) { this.inteligencia = validar(inteligencia); }
+    public void setArmadura(Armadura armadura) { this.armadura = armadura; }
 
     // RETURN - Atributo
     public int getAtributos() {
@@ -140,18 +140,23 @@ public class Luchador {
         return total;
     }
 
-    // DEFENSA - D20
 
     // DEFENSA - D20
-    public int defenderse() {
+     public int defenderse() {
         // RANDOM - Dado
         int dado = tirarDado(20);
         int bonoArmadura = 0;
 
-
+         if (armadura != null) {
+         bonoArmadura = armadura.getBono();
+      }
+        
         // CÁLCULO - Defensa
         int defensa = dado + getAgilidad() / 10 + bonoArmadura;
-
+      
+        
+        
+     
         // PRINT - Resultados
         System.out.println(getNombre() + " se defiende.");
         System.out.println("Dado D20: " + dado);
@@ -252,7 +257,11 @@ public class Luchador {
 
         return danio;
     }
-    
+
+   
+
+ 
+ 
     
 }
 

@@ -123,4 +123,5 @@ public final class Guerrero extends Luchador {
     public boolean habilidadDisponible() {
         return enfriamiento == 0;
     }
+
 }

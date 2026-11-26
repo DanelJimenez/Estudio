@@ -123,4 +123,6 @@ public final class Arquero extends Luchador {
     public boolean habilidadDisponible() {
         return enfriamiento == 0;
     }
+    
+    
 }

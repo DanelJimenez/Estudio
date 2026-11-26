@@ -95,4 +95,6 @@ public class Mago extends Luchador {
     public boolean habilidadDisponible() {
         return enfriamiento == 0;
     }
+
+
 }
