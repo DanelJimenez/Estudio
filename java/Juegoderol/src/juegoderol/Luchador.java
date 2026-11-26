@@ -29,8 +29,7 @@ public class Luchador {
     private final Random random = new Random();
     
     
-    // COMPOSICIÓN - Armadura
-    private Armadura armadura;
+  
 
 
     // EFECTOS - Estados
@@ -149,10 +148,6 @@ public class Luchador {
         int dado = tirarDado(20);
         int bonoArmadura = 0;
 
-        // IF - Armadura
-        if (armadura != null) {
-            bonoArmadura = armadura.getBonoDefensa();
-        }
 
         // CÁLCULO - Defensa
         int defensa = dado + getAgilidad() / 10 + bonoArmadura;
@@ -259,43 +254,6 @@ public class Luchador {
         return danio;
     }
     
-    
-    // MÉTODO - Equipamiento
-    public void equiparArmadura(Armadura nuevaArmadura) {
-
-        // IF - Validación
-        if (nuevaArmadura == null) {
-            System.out.println("Armadura no válida.");
-            return;
-        }
-
-        // IF - Equipo
-        if (this.armadura != null) {
-            System.out.println("Ya tiene armadura.");
-            return;
-        }
-
-        // ASIGNACIÓN - Armadura
-        this.armadura = nuevaArmadura;
-
-        // IF - Inteligencia
-        if (nuevaArmadura.getBonoInteligencia() > 0) {
-            int inteligenciaNueva = getinteligencia()
-                    + nuevaArmadura.getBonoInteligencia();
-
-            setinteligencia(Math.min(100, inteligenciaNueva));
-        }
-
-        // PRINT - Equipo
-        System.out.println(getNombre() + " equipa "
-                + nuevaArmadura.getNombre());
-    }
-
-    // GET - Armadura
-    public Armadura getArmadura() {
-        return armadura;
-    }
-
     
 }
 

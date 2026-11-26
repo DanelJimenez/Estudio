@@ -27,10 +27,7 @@ public class Main {
           Arquero arquero = new Arquero("Hawkeye", 100, 60, 1, 1, 1);
           // ARRAY - Luchadores
           Luchador[] luchadores = {guerrero, mago, arquero};
-          // MÉTODO - Armaduras
-          guerrero.equiparArmadura(new CotaDeMalla());
-          mago.equiparArmadura(new ArmaduraDeTela());
-          arquero.equiparArmadura(new ArmaduraDeCuero());
+   
           // FOR - Estadísticas
           System.out.println("\n--- LUCHADORES ---");
           for (int i = 0; i < luchadores.length; i++) {
@@ -44,13 +41,8 @@ public class Main {
               System.out.println("Agilidad: " + luchador.getAgilidad());
               System.out.println("Inteligencia: " + luchador.getinteligencia());
               
-              // IF - Armadura
-              if (luchador.getArmadura() != null) {
-                  System.out.println("Armadura: " + luchador.getArmadura().getNombre());
-                  System.out.println("Bono defensa: "
-                          + luchador.getArmadura().getBonoDefensa());
-              }
-          }     // SELECCIÓN - Personajes
+
+           // SELECCIÓN - Personajes
           System.out.println("SELECCIÓN");
           int opcion1 = leerOpcion(entrada, "Primer luchador (1-3): ", 1, 3);
           int opcion2;
@@ -197,28 +189,17 @@ public class Main {
       }
   }
 
-  // MÉTODO - Validación
-  public static int leerOpcion(Scanner entrada, String mensaje,
-                               int minimo, int maximo) {
 
     // WHILE - Lectura
-    while (true) {
-      System.out.print(mensaje);
 
-      // TRY-CATCH - Errores
-      try {
-        int opcion = Integer.parseInt(entrada.nextLine());
-
-        // IF - Rango
-        if (opcion >= minimo && opcion <= maximo) {
-          return opcion;
-        }
 
         System.out.println("Opción fuera del rango.");
 
-      } catch (NumberFormatException error) {
-        System.out.println("Ingresa un número válido.");
-      }
-    }
+
   }
+
+    private static int leerOpcion(Scanner entrada, int i, int i0) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
 }
