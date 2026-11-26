@@ -11,63 +11,54 @@ import java.util.Scanner;
  * @author djmat
  */
 
+
 public class Main {
 
-  // MAIN - Inicio
   public static void main(String[] args) {
-      // PRINT - Inicio
       try (Scanner entrada = new Scanner(System.in)) {
-          // PRINT - Inicio
- 
-          System.out.println("  ARENA DE LUCHADORES");
- 
-          // OBJETOS - Personajes
+          System.out.println("ARENA DE LUCHADORES");
+          
+          // personajes
           Guerrero guerrero = new Guerrero("Capitán América", 100, 60, 1, 1, 1);
           Mago mago = new Mago("Piru", 100, 55, 1, 1, 1);
           Arquero arquero = new Arquero("Hawkeye", 100, 60, 1, 1, 1);
-          // ARRAY - Luchadores
           Luchador[] luchadores = {guerrero, mago, arquero};
-   
-          // FOR - Estadísticas
+          
+          // estadísticas
           System.out.println("\n--- LUCHADORES ---");
           for (int i = 0; i < luchadores.length; i++) {
-              Luchador luchador = luchadores[i];
-              
-              // PRINT - Atributos
-              System.out.println("\n" + (i + 1) + ". " + luchador.getNombre());
-              System.out.println("Vida: " + luchador.getHP());
-              System.out.println("Ataque: " + luchador.getAtaque());
-              System.out.println("Fuerza: " + luchador.getFuerza());
-              System.out.println("Agilidad: " + luchador.getAgilidad());
-              System.out.println("Inteligencia: " + luchador.getinteligencia());
-              
-
-           // SELECCIÓN - Personajes
-          System.out.println("SELECCIÓN");
+              Luchador l = luchadores[i];
+              System.out.println("\n" + (i + 1) + ". " + l.getNombre());
+              System.out.println("Vida: " + l.getHP());
+              System.out.println("Ataque: " + l.getAtaque());
+              System.out.println("Fuerza: " + l.getFuerza());
+              System.out.println("Agilidad: " + l.getAgilidad());
+              System.out.println("Inteligencia: " + l.getinteligencia());
+          }
+          
+          // selección
+          System.out.println("\nSELECCIÓN");
           int opcion1 = leerOpcion(entrada, "Primer luchador (1-3): ", 1, 3);
           int opcion2;
-          // DO-WHILE - Validación
           do {
               opcion2 = leerOpcion(entrada, "Segundo luchador (1-3): ", 1, 3);
               if (opcion1 == opcion2) {
                   System.out.println("Selecciona otro luchador.");
               }
           } while (opcion1 == opcion2);
-          // OBJETOS - Seleccionados
+          
           Luchador jugador1 = luchadores[opcion1 - 1];
           Luchador jugador2 = luchadores[opcion2 - 1];
-          // PRINT - Combate
           
-          System.out.println(" INICIA EL COMBATE");
-         
+          System.out.println("\nINICIA EL COMBATE");
           System.out.println(jugador1.getNombre() + " VS " + jugador2.getNombre());
+          
+          // combate
           int turno = 0;
-          // WHILE - Combate
           while (jugador1.estaVivo() && jugador2.estaVivo()) {
               Luchador atacante;
               Luchador defensor;
               
-              // IF-ELSE - Turnos
               if (turno % 2 == 0) {
                   atacante = jugador1;
                   defensor = jugador2;
@@ -76,94 +67,37 @@ public class Main {
                   defensor = jugador1;
               }
               
-              // PRINT - Turno
-
-              System.out.println("TURNO DE " + atacante.getNombre());
-         
+              System.out.println("\nTURNO DE " + atacante.getNombre());
               
-              // INSTANCEOF - Enfriamiento
-              switch (atacante) {
-                  case Guerrero guerrero1 -> guerrero1.iniciarTurno();
-                  case Mago mago1 -> mago1.iniciarTurno();
-                  case Arquero arquero1 -> arquero1.iniciarTurno();
-                  default -> {
-                  }
-              }
-              
-              // MÉTODO - Veneno
+              iniciarTurno(atacante);
               atacante.procesarVeneno();
               
-              // IF - Eliminación
               if (!atacante.estaVivo()) {
                   System.out.println(atacante.getNombre() + " fue derrotado.");
                   break;
               }
               
-              // PRINT - Vida
-              System.out.println("\n" + atacante.getNombre()
-                      + " HP: " + atacante.getHP());
-              System.out.println(defensor.getNombre()
-                      + " HP: " + defensor.getHP());
+              System.out.println(atacante.getNombre() + " HP: " + atacante.getHP());
+              System.out.println(defensor.getNombre() + " HP: " + defensor.getHP());
               
+              // acción
               boolean accionRealizada = false;
-              
-              // WHILE - Menú
               while (!accionRealizada) {
                   System.out.println("\n1. Ataque normal");
                   System.out.println("2. Habilidad especial");
-                  
                   int opcion = leerOpcion(entrada, "Acción: ", 1, 2);
                   
-                  // IF - Ataque
                   if (opcion == 1) {
                       int ataqueTotal = atacante.atacar();
                       int defensaTotal = defensor.defenderse();
-                      
-                      // IF - Impacto
                       if (ataqueTotal > defensaTotal) {
-                          int danio = atacante.calcularDanioNormal();
-                          defensor.recibirDanio(danio);
+                          defensor.recibirDanio(atacante.calcularDanioNormal());
                       } else {
                           System.out.println("El ataque ha fallado.");
                       }
-                      
                       accionRealizada = true;
-                      
                   } else {
-                      
-                      // INSTANCEOF - Habilidades
-                      switch (atacante) {
-                          case Guerrero personaje -> {
-                              
-                              // IF - Furia
-                              if (personaje.habilidadDisponible()) {
-                                  personaje.golpeConFuria(defensor);
-                                  accionRealizada = true;
-                              }
-                              
-                          }
-                          case Mago personaje -> {
-                              
-                              // IF - Fuego
-                              if (personaje.habilidadDisponible()) {
-                                  personaje.bolaDeFuego(defensor);
-                                  accionRealizada = true;
-                              }
-                              
-                          }
-                          case Arquero personaje -> {
-                              
-                              // IF - Veneno
-                              if (personaje.habilidadDisponible()) {
-                                  personaje.flechaEnvenenada(defensor);
-                                  accionRealizada = true;
-                              }
-                          }
-                          default -> {
-                          }
-                      }
-                      
-                      // IF - Enfriamiento
+                      accionRealizada = usarHabilidad(atacante, defensor);
                       if (!accionRealizada) {
                           System.out.println("Habilidad en enfriamiento.");
                           System.out.println("Selecciona otra acción.");
@@ -171,35 +105,70 @@ public class Main {
                   }
               }
               
-              // INCREMENTO - Turnos
               turno++;
-          }     // PRINT - Final
-    
-          System.out.println("          FIN DEL COMBATE");
-    
-          // IF-ELSE - Ganador
+          }
+          
+          // final
+          System.out.println("\nFIN DEL COMBATE");
           if (jugador1.estaVivo()) {
               System.out.println("GANADOR: " + jugador1.getNombre());
           } else if (jugador2.estaVivo()) {
               System.out.println("GANADOR: " + jugador2.getNombre());
           } else {
               System.out.println("EMPATE");
+          } }
+  }
+
+  // enfriamiento
+  private static void iniciarTurno(Luchador atacante) {
+      switch (atacante) {
+          case Guerrero guerrero -> guerrero.iniciarTurno();
+          case Mago mago -> mago.iniciarTurno();
+          case Arquero arquero -> arquero.iniciarTurno();
+          default -> {
           }
-          // SCANNER - Cierre
       }
   }
 
-
-    // WHILE - Lectura
-
-
-        System.out.println("Opción fuera del rango.");
-
-
+  // habilidad
+  private static boolean usarHabilidad(Luchador atacante, Luchador defensor) {
+      switch (atacante) {
+          case Guerrero g -> {
+              if (g.habilidadDisponible()) {
+                  g.golpeConFuria(defensor);
+                  return true;
+              }
+          }     case Mago m -> {
+              if (m.habilidadDisponible()) {
+                  m.bolaDeFuego(defensor);
+                  return true;
+              }
+          }     case Arquero a -> {
+              if (a.habilidadDisponible()) {
+                  a.flechaEnvenenada(defensor);
+                  return true;
+              }
+          }     default -> {
+          }
+      }
+    return false;
   }
 
-    private static int leerOpcion(Scanner entrada, int i, int i0) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+  // lectura
+  private static int leerOpcion(Scanner entrada, String mensaje, int min, int max) {
+    while (true) {
+      System.out.print(mensaje);
+      if (entrada.hasNextInt()) {
+        int opcion = entrada.nextInt();
+        if (opcion >= min && opcion <= max) {
+          return opcion;
+        }
+        System.out.println("Opción fuera del rango.");
+      } else {
+        System.out.println("Entrada no válida.");
+        entrada.next();
+      }
     }
+  }
 
 }
