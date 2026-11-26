@@ -26,9 +26,16 @@ public class Mago extends Luchador {
     }
 
     // OVERRIDE - Inteligencia
-    @Override
+     @Override
     public int getAtributos() {
-        return getinteligencia();
+
+    int inteligencia = getinteligencia();
+
+    if (getArmadura() != null) {
+        inteligencia += getArmadura().getBonoInteligencia();
+    }
+
+    return inteligencia;
     }
 
     // MÉTODO - Turnos

@@ -8,25 +8,34 @@ package juegoderol;
  *
  * @author djmat
  */
+
 public class Armadura {
 
-  // atributos
-  private final String nombre;
-  private final int bono;
+    private final String nombre;
+    private final int bono;
+    private final int bonoInteligencia;
 
-  public Armadura(String nombre, int bono) {
-    this.nombre = nombre;
-    this.bono = bono;
-  }
+    public Armadura(String nombre, int bono) {
+        this.nombre = nombre;
+        this.bono = bono;
+        this.bonoInteligencia = 0;
+    }
 
-  public String getNombre() {
-    return nombre;
-  }
+    public Armadura(String nombre, int bono, int bonoInteligencia) {
+        this.nombre = nombre;
+        this.bono = bono;
+        this.bonoInteligencia = bonoInteligencia;
+    }
 
-  public int getBono() {
-    return bono;
-  }
+    public String getNombre() {
+        return nombre;
+    }
 
-  
-  
+    public int getBono() {
+        return bono;
+    }
+
+    public int getBonoInteligencia() {
+        return bonoInteligencia;
+    }
 }
